@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>admin_login</servlet-name>
+        <servlet-class>com.gms.admin.admin_login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>registration</servlet-name>
+        <servlet-class>com.gms.registration.registration</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>admin_dashbord</servlet-name>
+        <servlet-class>com.gms.admin.admin_dashbord</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>customer_login</servlet-name>
+        <servlet-class>com.gms.customer.customer_login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>customer_dashbord</servlet-name>
+        <servlet-class>com.gms.customer.customer_dashbord</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>add_membership</servlet-name>
+        <servlet-class>com.gms.admin.add_membership</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>admin_logout</servlet-name>
+        <servlet-class>com.gms.admin.admin_logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>customer_logout</servlet-name>
+        <servlet-class>com.gms.customer.customer_logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>admin_add_membership</servlet-name>
+        <servlet-class>com.gms.admin.admin_add_membership</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>generate_membership_report</servlet-name>
+        <servlet-class>com.gms.admin.generate_membership_report</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>admin_add_payment</servlet-name>
+        <servlet-class>com.gms.admin.admin_add_payment</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin_login</servlet-name>
+        <url-pattern>/admin_login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registration</servlet-name>
+        <url-pattern>/registration</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>admin_dashbord</servlet-name>
+        <url-pattern>/admin_dashbord</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>customer_login</servlet-name>
+        <url-pattern>/customer_login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>customer_dashbord</servlet-name>
+        <url-pattern>/customer_dashbord</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>add_membership</servlet-name>
+        <url-pattern>/add_membership</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>admin_logout</servlet-name>
+        <url-pattern>/admin_logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>customer_logout</servlet-name>
+        <url-pattern>/customer_logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>admin_add_membership</servlet-name>
+        <url-pattern>/admin_add_membership</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>generate_membership_report</servlet-name>
+        <url-pattern>/generate_membership_report</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>admin_add_payment</servlet-name>
+        <url-pattern>/admin_add_payment</url-pattern>
+    </servlet-mapping>
+    
+    <error-page>
+   <error-code>404</error-code>
+   <location>/404_page.jsp</location>
+</error-page>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+  
+</web-app>
+  
